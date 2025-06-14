@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+email-validator
+python-multipart
+requests
+langchain-openai
+streamlit
+langchain
+faiss-cpu
+sentence-transformers
+PyPDF2
+aiofiles
+python-dotenv
