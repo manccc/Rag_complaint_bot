@@ -3,17 +3,6 @@
 
 A conversational AI chatbot built using Streamlit and FastAPI. It can register customer complaints and answer policy-related questions using Retrieval-Augmented Generation (RAG) from a PDF-based knowledge base.
 
----
-
-## 🚀 Features
-
-- 🤖 Conversational chatbot with guided input collection
-- 🧠 Answers questions from a PDF document using LangChain + FAISS
-- 📝 Registers complaints via a FastAPI backend and stores them in a database
-- 📄 Knowledge base loaded from `knowledge_base/policies.pdf`
-
----
-
 ## 📁 Project Structure
 
 ```
