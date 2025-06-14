@@ -3,7 +3,7 @@
 
 A conversational AI chatbot built using Streamlit and FastAPI. It can register customer complaints and answer policy-related questions using Retrieval-Augmented Generation (RAG) from a PDF-based knowledge base.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rag_chatbot/
@@ -23,7 +23,7 @@ rag_chatbot/
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥️ Running the App
+## Running the App
 
 ### Step 1: Start FastAPI Backend
 
