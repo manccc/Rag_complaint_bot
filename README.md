@@ -67,7 +67,7 @@ Open [http://localhost:8501](http://localhost:8501) to use the chatbot.
 
 ---
 
-## 🧪 Example Interaction
+## Example Interaction
 
 ```
 User: I want to file a complaint about a delayed delivery.
