@@ -19,15 +19,15 @@ A conversational AI chatbot built using Streamlit and FastAPI. It can register c
 ```
 rag_chatbot/
 ├── backend/
-│   ├── main.py               # FastAPI app
-│   ├── db.py                 # SQLite DB setup
-│   ├── models.py             # SQLAlchemy models
-│   ├── schemas.py            # Pydantic schemas
-│   ├── rag_knowledge.py      # RAG integration using LangChain
+│   ├── main.py              
+│   ├── db.py                
+│   ├── models.py            
+│   ├── schemas.py            
+│   ├── rag_knowledge.py    
 ├── frontend/
-│   └── app.py                # Streamlit chatbot UI
+│   └── app.py                
 ├── knowledge_base/
-│   └── policies.pdf          # Sample PDF used as knowledge base
+│   └── policies.pdf         
 ├── requirements.txt
 ├── README.md
 ```
@@ -86,24 +86,6 @@ Bot: I'm sorry to hear that. Please provide your name.
 ...
 Bot: Your complaint has been registered with ID: XYZ123
 ```
-
-Also supports Q&A like:
-
-```
-User: What is your return policy?
-Bot: Customers can return a product within 30 days of purchase...
-```
-
----
-
-## 🧰 Tech Stack
-
-- FastAPI
-- Streamlit
-- LangChain
-- FAISS
-- HuggingFace Embeddings
-- SQLite
 
 ---
 
