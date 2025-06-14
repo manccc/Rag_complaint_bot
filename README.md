@@ -28,7 +28,7 @@ rag_chatbot/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/rag_chatbot.git
+git clone https://github.com/manccc/Rag_complaint_bot.git
 cd rag_chatbot
 ```
 
