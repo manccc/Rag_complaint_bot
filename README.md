@@ -1,1 +1,112 @@
-# Rag_complaint_bot
+
+# 💬 RAG Complaint Chatbot
+
+A conversational AI chatbot built using Streamlit and FastAPI. It can register customer complaints and answer policy-related questions using Retrieval-Augmented Generation (RAG) from a PDF-based knowledge base.
+
+---
+
+## 🚀 Features
+
+- 🤖 Conversational chatbot with guided input collection
+- 🧠 Answers questions from a PDF document using LangChain + FAISS
+- 📝 Registers complaints via a FastAPI backend and stores them in a database
+- 📄 Knowledge base loaded from `knowledge_base/policies.pdf`
+
+---
+
+## 📁 Project Structure
+
+```
+rag_chatbot/
+├── backend/
+│   ├── main.py               # FastAPI app
+│   ├── db.py                 # SQLite DB setup
+│   ├── models.py             # SQLAlchemy models
+│   ├── schemas.py            # Pydantic schemas
+│   ├── rag_knowledge.py      # RAG integration using LangChain
+├── frontend/
+│   └── app.py                # Streamlit chatbot UI
+├── knowledge_base/
+│   └── policies.pdf          # Sample PDF used as knowledge base
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/rag_chatbot.git
+cd rag_chatbot
+```
+
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🖥️ Running the App
+
+### Step 1: Start FastAPI Backend
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+Check it at: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+### Step 2: Start Streamlit Frontend
+
+```bash
+streamlit run frontend/app.py
+```
+
+Open [http://localhost:8501](http://localhost:8501) to use the chatbot.
+
+---
+
+## 🧪 Example Interaction
+
+```
+User: I want to file a complaint about a delayed delivery.
+Bot: I'm sorry to hear that. Please provide your name.
+...
+Bot: Your complaint has been registered with ID: XYZ123
+```
+
+Also supports Q&A like:
+
+```
+User: What is your return policy?
+Bot: Customers can return a product within 30 days of purchase...
+```
+
+---
+
+## 🧰 Tech Stack
+
+- FastAPI
+- Streamlit
+- LangChain
+- FAISS
+- HuggingFace Embeddings
+- SQLite
+
+---
+
+## 📝 License
+
+MIT License. Feel free to fork and customize!
